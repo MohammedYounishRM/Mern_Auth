@@ -83,7 +83,9 @@ const VerifyResetOtpPage = () => {
                 <button className="btn-primary" type="submit" disabled={isLoading}>
                     {isLoading ? "Validating..." : "Verify OTP"}
                 </button>
-                <p style={{marginTop: '10px'}}>Did not receive Email? check Spam folder</p>
+                <div className="auth-footer">
+                    <p>Did not receive Email? check Spam folder</p>
+                </div>
             </form>
         </div>
     );
