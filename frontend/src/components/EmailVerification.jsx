@@ -81,8 +81,10 @@ const EmailVerificationPage = () => {
                 <button className="btn-primary" type="submit" disabled={isLoading}>
                     {isLoading ? "Verifying..." : "Verify Email"}
                 </button>
-                <p style={{marginTop: '10px'}}>Did not receive Email? check Spam folder</p>
-            </form>
+				<div className="auth-footer">
+                    <p>Did not receive Email? check Spam folder</p>
+                </div>
+			</form>
         </div>
     );
 };
